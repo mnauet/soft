@@ -1,0 +1,72 @@
+
+--------------------------
+WLAN Settings
+
+sudo dhclient eth0
+
+ip addr
+ip a
+dmesg | grep -i eth 	//list interfaces
+lsmod | grep rt18 // search hardware type
+sudo apt-get install dkms
+sudo apt install linux-headers-$(uname -r) build.essential dkms git
+sudo apt-get install wireless-tools
+lsusb | grep Network
+iwconfig
+sudo apt install gnome-system-tools
+sudo ethtool
+sudo route -n
+sudo ifup eth0
+sudo ifdown etho
+sudo ifconfig -s //network status
+ls /sys/class/net
+nmcli d 	//network devices
+nmcli c 	//containers
+nmcli r 	//wifi Radio Interfaces
+------------------------
+GRUB
+sudo nano /etc/default/grub 
+GRUB_CMDLINE_LINUX = net.ifnames=0 biosdevicename=0
+sudo update-grub
+sudo nano /etc/network/interfaces
+
+journalctl -b
+who -u
+kill "pid"
+------------------------------------
+wlan default setting rename:
+
+
+Edit your /etc/default/grub changing the line from
+
+    GRUB_CMDLINE_LINUX=""
+
+    to
+
+    GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"
+
+    and, finally:
+
+    $ sudo update-grub
+
+    and reboot your system:
+
+    $ sudo reboot
+
+----------------------
+wlan einrichten
+sudo nano /etc/network/interfaces
+auto wlan0
+iface wlan0 inet dhcp
+wpa-ssid EasyBox-85631
+wpa-psk 12344321
+
+
+nmcli dev wifi list
+ifconfig -a           # zeigt alle verfügbaren Schnittstellen
+iwconfig              # zeigt nur WLAN-Schnittstellen
+iw dev                # zeigt nur WLAN-Schnittstellen 
+
+
+
+
