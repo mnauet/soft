@@ -1,3 +1,18 @@
+===================================================
+https://help.ubuntu.com/stable/ubuntu-help/shell-keyboard-shortcuts.html.en
+ Alt+F1 or the Super key 	# Switch between the Activities 		overview and desktop. In the overview, start typing to 			instantly search your applications, contacts, and documents.
+
+Alt+F1/Super    #Switch between the Activities overview and desktop. 
+Alt+Esc 	#Switch between windows in the current workspace. Hold down Shift for reverse order.
+Super+Tab	#Quickly switch between windows. Hold down Shift forreverse order.
+Super+A		#Show the list of applications.
+Super+Page Up / Page Down	#Switch between workspaces.
+
+Shift+Super+Page Up/Page Down	#Move the current window to a different workspace.
+Shift+Super+→	#Move the current window one monitor to the left.
+
+====================================================
+
 Prt Scrn to take a screenshot of the desktop.
 
 Alt+Prt Scrn to take a screenshot of a window.

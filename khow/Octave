@@ -1,7 +1,17 @@
+
+upgrade octave:
+
+sudo add-apt-repository ppa:octave/stable
+sudo apt update
+sudo apt install octave
+
+
+
 https://help.ubuntu.com/stable/ubuntu-help/shell-keyboard-shortcuts.html.en
  Alt+F1 or the Super key 	# Switch between the Activities 		overview and desktop. In the overview, start typing to 			instantly search your applications, contacts, and documents.
 
 Alt+F1/Super    #Switch between the Activities overview and desktop. 
+Alt+Esc 	#Switch between windows in the current workspace. Hold down Shift for reverse order.
 Super+Tab	#Quickly switch between windows. Hold down Shift forreverse order.
 Super+A		#Show the list of applications.
 Super+Page Up / Page Down	#Switch between workspaces.
@@ -62,7 +72,7 @@ fprintf('For population = 35,000, we predict a profit of %f\n',...
 predict2 = [1, 7] * theta;
 fprintf('For population = 70,000, we predict a profit of %f\n',...
     predict2*10000);
-
+pr
 fprintf('Program paused. Press enter to continue.\n');
 pause;
 
@@ -90,7 +100,7 @@ end
 J_vals = J_vals';
 % Surface plot
 figure;
-surf(theta0_vals, theta1_vals, J_vals)
+surf(theta0_vals, theta1_vals, J_vals)len
 xlabel('\theta_0'); ylabel('\theta_1');
 
 % Contour plot
