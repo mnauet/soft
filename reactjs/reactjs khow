@@ -1,0 +1,58 @@
+reactjs know how
+august 10 2019
+sudo apt-get install curl
+sudo apt install nodejs
+
+sudo npm cache clean -f 	Clean Cache Forcefully
+sudo npm install -g n 		Install n Module 
+sudo n stable 			Install Nodejs
+#Setup Binary Link 
+sudo ln -sf /usr/local/n/versions/node/10.16.2/bin/node /usr/bin/node
+
+node -v 
+
+#https://codeburst.io/installing-reactjs-and-creating-your-first-application-d437706498ed
+
+sudo apt-get install -y build-essential
+sudo npm install -g create-react-app
+
+sudo create-react-app hello-worldcd /hello-world
+cd /hello-world
+
+# how to start node server to work on react application.
+npm start 	#move into our application directory, and type:
+		#close the local server, just press Crtl+C
+http://localhost:3000/
+
+
+#5 hours video for reactjs
+https://www.youtube.com/watch?v=DLX62G4lc44
+https://scrimba.com/g/glearnreact	# a better version of video
+#video text and code
+https://www.freecodecamp.org/news/want-to-become-a-react-developer-947c9a6dbb76/
+
+#change a directory executable
+ sudo chmod -R a+rwx ./hello-world/
+
+
+
+
+
+
+
+######################################
+code
+
+ReactDOM.render( 
+//( <MyApp/>, document.getElementById('root'));
+
+<div>
+    <h1> hallo world</h1>
+    <p> 1 am a paragrah</p>
+</div>
+, 
+document.getElementById("root")
+
+)
+
+
